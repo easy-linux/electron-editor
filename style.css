@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.current-document{
+    color: #fff;
+}
+
+.main-toolbar{
+    height: 50px;
+    background-color: rgb(30,45,59);
+    -webkit-app-region: drag;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-toolbar .toolbar-buttons .tool-button{
+    background-color: rgb(39, 59, 77);
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid;
+}
+
+.main-toolbar .toolbar-buttons .tool-button:disabled{
+    cursor: not-allowed;
+}
+
+.editor-holder{
+    width: 100vw;
+    height: calc(100vh - 50px);
+    position: relative;
+}
+
+#editor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

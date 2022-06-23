@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron editor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./lib/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; worker-src blob: file:;">
+
+</head>
+<body>
+    <header class="main-toolbar">
+        <span class="current-document"></span>
+        <div class="toolbar-buttons">
+            <button class="tool-button btn-new" title="New file...">📁</button>
+            <button class="tool-button btn-open" title="Open file...">📂</button>
+            <button class="tool-button btn-save" title="Save file" disabled>📥</button>
+            <button class="tool-button btn-save-as" title="Save file as...">📥</button>
+        </div>
+    </header>
+    <main class="editor-holder">
+        <div id="editor"></div>
+    </main>
+</body>
+</html>
